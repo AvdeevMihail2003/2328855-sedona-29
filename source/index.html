@@ -1,12 +1,204 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/source/js/app.js"></script>
+  <link href="/source/css/style.css" rel="stylesheet">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" href="/source/img/favicon.png">
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <div class="top-menu">
+      <img src="/source/img/logo-2.svg" alt="логотип Седона" class="sedona-logo">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div id="menu" class="menu">
+        <div class="close-icon" onclick="toggleMenu()"></div>
+        <ul>
+          <li>Главная</li>
+          <li>Фото и видео</li>
+          <li>Форма Отзыва</li>
+          <li>HTML ACADEMY</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main" id="main">
+      <h2>
+        <div class="welcome">
+          <img class="foto2" src="/source/img/welcome.svg" width="282" height="214" alt="welcome.">
+        </div>
+        <div class="sedona">
+          <div class="bold_big">
+            <div>Седона — небольшой
+              городок в Аризоне,
+              заслуживающий большего!</div>
+          </div>
+          <div class="big">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</div>
+        </div>
+      </h2>
+    </section>
+    <section class="about" id="about">
+      <h2>
+        <div class="foto1">
+          <div class="blue">
+            <div class="bold">
+              <div>Настоящий
+                городок</div>
+            </div>
+            <div class="number">— №1 —</div>
+            <div class="blue-small">
+              <p>Седона — не аттракцион для
+                туристов, там течёт своя
+                жизнь</p>
+            </div>
+          </div>
+          <img src="/source/img/photo-1.jpg" alt="Преимущества.">
+        </div>
+        <div class="services">
+          <div class="house">
+            <div class="house-img">
+              <img src="/source/img/icon-house.svg" alt="Жильё.">
+              <div class="bold-house">
+                <p>Жильё</p>
+              </div>
+            </div>
+            <p class="small-house">Рекомендуем пожить
+              в настоящем мотеле,
+              всё как в кино!</p>
+          </div>
+          <div class="burger">
+            <div class="burger-img">
+              <img src="/source/img/icon-burger.svg" alt="Еда.">
+              <div class="bold-burger">
+                <p>Еда</p>
+              </div>
+            </div>
+            <p class="small-burger">Всегда заказывайте
+              топовый фирменный бургер,
+              вы не разочаруетесь!</p>
+          </div>
+          <div class="gift">
+            <div class="gift-img">
+              <img src="/source/img/icon-gift.svg" alt="Сувениры.">
+              <div class="bold-gift">
+                <p>Сувениры</p>
+              </div>
+            </div>
+            <p class="small-gift">Не только китайского,
+              но и настоящего местного
+              производства!</p>
+          </div>
+        </div>
+        </div>
+        <div class="evil_bridg">
+          <div class="blue">
+            <div class="bold">
+              <div>Там есть</div>
+              мост дьявола
+            </div>
+            <div class="number">— №2 —</div>
+            <div class="blue-small">
+              <p>Да, по нему можно пройти!
+                Если вы осмелитесь,
+                разумеется</p>
+            </div>
+          </div>
+        </div>
+        <img src="/source/img/bridge.jpg" alt="ГрандКаньон.">
+
+        <div class="frame41">
+          <div class="advantages1">
+            <div class="bold-advantages">
+              <div>Небольшая
+                площадь</div>
+            </div>
+            <div class="advantages1-container">
+              <div class="number-advantages">— №3 —</div>
+              <p>Все достопримечательности
+                находятся очень близко</p>
+            </div>
+          </div>
+          <hr class="white-line">
+          <div class="advantages2">
+            <div class="bold-advantages">
+              <div>Красивая
+                дорога</div>
+            </div>
+            <div class="advantages2-container">
+              <div class="number-advantages">— №4 —</div>
+              <p>Ехать в Седону из Лас-Вегаса
+                совсем не скучно!</p>
+            </div>
+          </div>
+          <hr class="white-line">
+          <div class="advantages3">
+            <div class="bold-advantages">
+              <div>Мало
+                туристов</div>
+            </div>
+            <div class="advantages3-container">
+              <div class="number-advantages">— №5 —</div>
+              <p>Большинство едет в Гранд
+                Каньон и толпится там</p>
+            </div>
+          </div>
+        </div>
+      </h2>
+    </section>
+    <section class="subscription">
+      <h2>
+        <div class="sedona">
+          <div class="bold-subscription">Заинтересовались?</div>
+          <p></p>
+          <div class="big-subscription">
+            <div>Укажите предполагаемые даты поездки,
+              и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+          </div>
+        </div>
+        <div class="sedona1">
+          <button onclick="window.open('catalog.html','_self')" type='find_hotel' class='button_find'>
+            Найти Гостиницу
+          </button>
+        </div>
+        <div>
+          <img src="/source/img/map-mobile.jpg" class="map" alt="Карта">
+        </div>
+      </h2>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="visit">#visitSEDONA</div>
+    <div class="row-footer">
+      <div class="social">
+        <a href="#" target="_blank" name="VK" class="vk">
+          <img src='/source/img/vk.svg' alt="VK.">
+        </a>
+        <a href="#" name="TG" class="tg">
+          <img src='/source/img/tg.svg' alt='TG.'>
+        </a>
+        <a href='#' name="YT" class="yt">
+          <img src='/source/img/yt.svg' alt='YT.'>
+        </a>
+      </div>
+      <div class="footer-logo">
+        <div class="develop">Разработано</div>
+        <a href="https://htmlacademy.ru/study" name="htmlacademy_footer">
+          <img src='/source/img/htmlacademy.svg' alt="сайт htmlacademy." class="html-academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
